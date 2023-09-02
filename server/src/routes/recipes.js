@@ -95,5 +95,15 @@ router.get("/savedRecipes/:userId", async (req, res) => {
     res.status(500).json(err);
   }
 });
+router.delete("/delete/:id", async (req, res) => {
+  try {
+    let recipe = await RecipesModel.findByIdAndDelete(req.params.id) //new true means, if new contact comes it will be added
+    res.json({ "Success": "Receipe has been deleted" });
+    console.log("deletedd successfully")
+  } catch (error) {  //catch errors
+    console.error(error.message)
+    res.status(500).send("Internal Server Error");
+  }
+});
 
 export { router as recipesRouter };
