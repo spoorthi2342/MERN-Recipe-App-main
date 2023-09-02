@@ -54,12 +54,40 @@ input {
   margin: 0;
   width: 100%;
   height: 80px;
-  background-color: black;
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-decoration: none;
+}
+/* footer.css */
+/* Style the overall footer container */
+.app-footer {
+  background-color:white;
+  color:black;
+  padding: 20px;
+}
+
+/* Style the footer links section */
+.footer-links a {
+  text-decoration: none;
+  color:black;
+  font-size: small;
+  margin-right: 20px;
+}
+
+/* Style the social links section */
+.social-links a {
+  text-decoration: none;
+  font-size: small;
+  color:black;
+  margin-right: 10px;
+}
+
+/* Style the footer info section */
+.app-info p {
+  margin: 10px 0;
 }
 
 a {
