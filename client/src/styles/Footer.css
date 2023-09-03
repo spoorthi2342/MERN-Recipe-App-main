@@ -1,0 +1,66 @@
+/* Style the footer container */
+.app-footer {
+    background-color: rgba(62, 67, 14, 0.84);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width:1250px;
+    height: 95px;
+    padding-bottom:50px;
+    
+  }
+  
+  /* Style the footer links */
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: white; /* Change color on hover */
+  }
+  
+  /* Style the social links */
+  .social-links {
+    margin-top: 50px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: white; /* Change color on hover */
+  }
+  
+  /* Style the app info section */
+  .app-info {
+    margin-top: 20px;
+  }
+  
+  .app-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Style the logout link (if applicable) */
+  .logout-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .logout-link:hover {
+    text-decoration: underline;
+  }
+  

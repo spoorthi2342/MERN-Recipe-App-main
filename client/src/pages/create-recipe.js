@@ -3,6 +3,7 @@ import axios from "axios";
 import { useGetUserID } from "../hooks/useGetUserID";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import "../styles/create_recipe.css"
 
 export const CreateRecipe = () => {
   const userID = useGetUserID();
@@ -56,7 +57,7 @@ export const CreateRecipe = () => {
 
   return (
     <div className="create-recipe">
-      <h2>Create Recipe</h2>
+      <h2 >Create Recipe</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input

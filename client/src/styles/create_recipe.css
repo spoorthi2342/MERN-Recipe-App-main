@@ -1,0 +1,21 @@
+/* Style the create-recipe container */
+.create-recipe {
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: black;
+    color:black;
+  }
+  .create-recipe button{
+    border-color: black;
+    background-color: #7d7777;
+    margin-top: 5px;
+  }
+  .create-recipe h2{
+    color:black;
+  }
+  
+  

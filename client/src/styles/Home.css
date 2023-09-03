@@ -1,0 +1,93 @@
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  /* Style the recipe cards */
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between recipe cards */
+  }
+  
+  li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust card width for three columns */
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+  
+    /* Hover effect */
+    &:hover {
+      transform: scale(1.02);
+    }
+  
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  /* Style the recipe name */
+  h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Style the buttons */
+  button {
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 10px; /* Add space between buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  
+    /* Hover effect */
+    &:hover {
+      background-color:white;
+    }
+  
+    /* Disable button styles */
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  
+  /* Style the instructions and cooking time */
+  .instructions {
+    margin: 10px 0;
+  }
+  
+  /* Style the recipe image */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the cooking time paragraph */
+  p {
+    margin: 0;
+  }
+
+  h1{
+    color: #fff;
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useGetUserID } from "../hooks/useGetUserID";
 import axios from "axios";
+import "../styles/Home.css"
 
 export const Home = () => {
   const [recipes, setRecipes] = useState([]);
