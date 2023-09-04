@@ -6,43 +6,36 @@ import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg
 import "../styles/Footer.css"
 
 export const Footer = () => {
-    const [cookies, setCookies] = useCookies(["access_token"]);
-    const navigate = useNavigate();
+  const [cookies, setCookies] = useCookies(["access_token"]);
+  const navigate = useNavigate();
+  
 
+  const logout = () => {
+    setCookies("access_token", "");
+    window.localStorage.clear();
+    navigate("/auth");
+  };
 
-    const logout = () => {
-        setCookies("access_token", "");
-        window.localStorage.clear();
-        navigate("/auth");
-    };
-
-    return (
-            <footer className="app-footer">
-                <div className="footer-links">
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/contact">Contact</Link>
-                </div>
-                <div className="social-links">
-                    <a href="#" className="social-icon">
-                      Facebook
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                    <a href="#" className="social-icon">
-                      Instagram
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                    <a href="#" className="social-icon">
-                      Twitter
-                        <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                </div>
-                <div className="app-info">
-                    <p>&copy; {new Date().getFullYear()} Recipe App</p>
-                    <p>Contact us at: wefour1234@gmail.com</p>
-                </div>
-            </footer>
-    );
+  return (
+    <footer className="app-footer">
+      <div className="footer-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+      <div className="social-links">
+        <a href="#" className="social-icon">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
+        <a href="#" className="social-icon">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a href="#" className="social-icon">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

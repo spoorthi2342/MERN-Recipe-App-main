@@ -1,3 +1,4 @@
+//create-reciepe
 import React, { useState } from "react";
 import axios from "axios";
 import { useGetUserID } from "../hooks/useGetUserID";
@@ -84,9 +85,21 @@ export const CreateRecipe = () => {
             onChange={(event) => handleIngredientChange(event, index)}
           />
         ))}
-        <button type="button" onClick={handleAddIngredient}>
-          Add Ingredient
-        </button>
+       <button
+  type="button"
+  onClick={handleAddIngredient}
+  style={{
+    backgroundColor: 'black', // Dark background color
+    color: '#fff', // White text color
+    padding: '10px 20px', // Adjust padding as needed
+    border: 'none', // Remove the default button border
+    cursor: 'pointer', // Add a pointer cursor on hover
+    borderRadius: '5px', // Add rounded corners if desired
+  }}
+>
+  Add Ingredient
+</button>
+
         <label htmlFor="instructions">Instructions</label>
         <textarea
           id="instructions"

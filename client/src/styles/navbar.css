@@ -1,81 +1,45 @@
-/* Style the navbar container */
+/* Navbar.css */
 .navbar {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Style the navbar links */
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-    font-size: 16px;
-    transition: color 0.2s ease-in-out;
-    font-weight: bold;
-  }
-  
-  .navbar a:hover {
-    color: black; /* Change color on hover */
-  }
-  
-  /* Style the logout button */
-  .navbar button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  .navbar button:hover {
-    color: gray /* Change color on hover */
-  }
-  
-  /* Style the login/register link */
-  .navbar .login-register-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  .navbar .login-register-link:hover {
-    background-color:black;
-    color: white;
-  }
-  
-  /* Style the logout button */
-  .navbar .logout-button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-weight: bold;
-  }
-  
-  .navbar .logout-button:hover {
-    background-color: gray;
-    color: white;
-  }
-  /* Add styles for the icons */
-.nav-icon {
-    margin-right: 10px; /* Adjust the spacing between icon and text */
-  }
-  
-  
+  background-color:rgb(12, 12, 12);
+  color: #0e0e0e;
+  width: 100%;
+  height: 50%;
+  padding: 1px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: #f9f7f7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #eeeded;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: #131212;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

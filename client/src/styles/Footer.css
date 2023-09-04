@@ -1,69 +1,41 @@
+/* Footer.css */
 .app-footer {
-    background-color: rgba(58, 51, 6, 0.84);
-    color: white;
-    text-align: center;
-    align-items: center;
-    width: 100vw;
-    display: flex;
-    min-height: 2px;
-    flex-direction: column;
-    margin-top: 100vh;
-    margin-bottom: 0px;
+  background-color: #141414; /* Change this to your desired background color */
+  color: #fff; /* Text color */
+  padding: 15px 0;
+  bottom: 0;
+  width: 100%;
+  height:5%;
+  text-align: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to separate from the content */
+  margin-top: 50vh;
 }
 
-/* Style the footer links */
-.footer-links a {
-    text-decoration: none;
-    color: white;
-    margin: 0 20px;
-    font-size: 16px;
-    transition: color 0.2s ease-in-out;
+.footer-links a,
+.social-links a {
+  color: #fff; /* Link color set to white */
+  text-decoration: none;
+  margin: 0 20px; /* Increase spacing between links */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-.footer-links a:hover {
-    color: white;
-    /* Change color on hover */
+.footer-links a:hover,
+.social-links a:hover {
+  color: #007bff; /* Change link color on hover */
 }
 
-/* Style the social links */
-.social-links {
-    margin-top: 50px;
-    color: white;
-}
-
-.social-icon {
-    text-decoration: none;
-    color: white;
-    font-size: 50px;
-    margin: 20px 80px;
-    transition: color 0.2s ease-in-out;
-}
-
-.social-icon:hover {
-    color: white;
-    /* Change color on hover */
-}
-
-/* Style the app info section */
-.app-info {
-    margin-top: 20px;
-}
+ .app-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-items: flex-start; 
+ }
 
 .app-info p {
-    font-size: 14px;
-    margin: 5px 0;
+  margin: 1px 8px;
+  font-size: 12x; 
 }
-
-/* Style the logout link (if applicable) */
-.logout-link {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    display: block;
-}
-
-.logout-link:hover {
-    text-decoration: underline;
+.app-info p:last-child {
+  font-weight: normal;
 }

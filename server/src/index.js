@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/auth", userRouter);
+// /auth/login to access
 app.use("/recipes", recipesRouter);
 
 mongoose.connect(
